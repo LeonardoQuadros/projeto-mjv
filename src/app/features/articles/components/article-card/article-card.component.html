@@ -1,0 +1,12 @@
+<div *ngIf="article && card">
+    <li> {{article.title}} </li>
+    <li> Autor: {{article.author}} </li>
+    <p> {{article.theme}} </p>
+</div>
+
+<div *ngIf="article && !card">
+    <p> {{article.title}} </p>
+    <li> Autor: {{article.author}} </li>
+    <p> {{article.theme}} </p>
+    <p> {{article.content}}</p>
+</div>

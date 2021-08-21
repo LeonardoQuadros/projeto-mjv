@@ -1,0 +1,12 @@
+<div *ngIf="author && card">
+    <p> Nome: {{author.name}} <p>
+    <p> Temas: {{author.themes}} <p></p>
+</div>
+
+<div *ngIf="author && !card">
+    <p> {{author.image}} <p>
+    <p> Nome: {{author.name}} <p>
+    <p> Data de Nascimento: {{author.birthday | date:'shortDate'}} </p>
+    <p> Salario: {{author.salary | currency:'BRL'}} </p>
+    <p> Temas: {{author.themes}} <p></p>
+</div>
