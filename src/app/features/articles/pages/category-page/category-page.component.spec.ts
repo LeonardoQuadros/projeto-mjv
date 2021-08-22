@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CulturePageComponent } from './culture-page.component';
+import { CategoryPageComponent } from './category-page.component';
 
-describe('CulturePageComponent', () => {
-  let component: CulturePageComponent;
-  let fixture: ComponentFixture<CulturePageComponent>;
+describe('CategoryPageComponent', () => {
+  let component: CategoryPageComponent;
+  let fixture: ComponentFixture<CategoryPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CulturePageComponent ]
+      declarations: [ CategoryPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CulturePageComponent);
+    fixture = TestBed.createComponent(CategoryPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

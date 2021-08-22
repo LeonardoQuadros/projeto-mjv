@@ -6,7 +6,6 @@ import { AuthorCardComponent } from './components/author-card/author-card.compon
 import { AuthorListComponent } from './components/author-list/author-list.component';
 import { AuthorDetailsPageComponent } from './pages/author-details-page/author-details-page.component';
 import { RouterModule } from '@angular/router';
-import { ArticleCardComponent } from '../articles/components/article-card/article-card.component';
 import { ArticlesModule } from '../articles/articles.module';
 
 

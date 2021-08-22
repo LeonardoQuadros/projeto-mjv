@@ -1,13 +1,13 @@
 <div class="card" *ngIf="article && card">
-    <li [routerLink]="['/articledetails', article.id]"> <b>{{article.title}}</b> </li>
-    <li [routerLink]="['/authordetails', findAuthorId(article.author)]"> {{article.author}} </li>
+    <li [routerLink]="['/detalhesartigos', article.id]"> <b>{{article.title}}</b> </li>
+    <li [routerLink]="['/detalhesautores', findAuthorId(article.author)]"> {{article.author}} </li>
     <p> {{article.theme | titlecase}} </p>
 </div>
 
 <div class="carddetails" *ngIf="article && !card">
     <p><b> {{article.title}} </b> </p>
     <p> {{article.date | date:'shortDate'}} </p>
-    <li [routerLink]="['/authordetails', findAuthorId(article.author)]"> {{article.author}} </li>
+    <li [routerLink]="['/detalhesautores', findAuthorId(article.author)]"> {{article.author}} </li>
     <p> {{article.theme | titlecase}} </p>
     <p> {{article.content}}</p>
 </div>
