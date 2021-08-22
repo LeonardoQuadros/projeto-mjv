@@ -13,7 +13,7 @@ export class AuthorPageComponent implements OnInit {
   constructor(private authorService: AuthorService) { }
 
   ngOnInit(): void {
-    this.authorsList = this.authorService.getAUthors();
+    this.authorsList = this.authorService.getAuthors();
   }
 
 }

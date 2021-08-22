@@ -9,30 +9,34 @@ export class ArticleService {
   articleList: Array<Article> = [
     {
       id: 1,
-      title: 'Titulo aleatorio',
+      title: 'Artigo 1',
       author: 'Francisco Silva',
-      theme:'culture',
+      date: new Date('2021-08-18'),
+      theme:'cultura',
       content: 'Conteudo aleatorio'
     },
     {
       id: 2,
-      title: 'Titulo aleatorio',
+      title: 'Artigo 2',
+      date: new Date('2021-08-19'),
       author: 'Tiago Junior',
-      theme:'politics',
+      theme:'politica',
       content: 'Conteudo aleatorio'
     },
     {
       id: 3,
-      title: 'Titulo aleatorio',
+      title: 'Artigo 3',
+      date: new Date('2021-08-20'),
       author: 'Aline Gomes',
-      theme:'sports',
+      theme:'esportes',
       content: 'Conteudo aleatorio'
     },
     {
       id: 4,
-      title: 'Titulo aleatorio',
+      title: 'Artigo 4',
+      date: new Date('2021-08-21'),
       author: 'Alexandro Neto',
-      theme:'economy',
+      theme:'economia',
       content: 'Conteudo aleatorio'
     }
   ]

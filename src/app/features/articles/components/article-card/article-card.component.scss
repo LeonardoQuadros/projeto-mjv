@@ -1,0 +1,33 @@
+@import 'src/assets/styles/_colors.scss';
+
+.card {
+    max-width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    padding: 5px;
+}
+.carddetails {
+    max-width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    padding: 5px;
+}
+li {
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+p {
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}

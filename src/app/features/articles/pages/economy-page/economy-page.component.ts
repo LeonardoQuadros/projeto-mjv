@@ -13,7 +13,7 @@ export class EconomyPageComponent implements OnInit {
   constructor(private articleService: ArticleService) { }
 
   ngOnInit(): void {
-    this.articlesList = this.articleService.getArticlesByTheme('economy')
+    this.articlesList = this.articleService.getArticlesByTheme('economia')
   }
 
 }

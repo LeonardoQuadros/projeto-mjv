@@ -5,6 +5,9 @@ import { AuthorPageComponent } from './pages/author-page/author-page.component';
 import { AuthorCardComponent } from './components/author-card/author-card.component';
 import { AuthorListComponent } from './components/author-list/author-list.component';
 import { AuthorDetailsPageComponent } from './pages/author-details-page/author-details-page.component';
+import { RouterModule } from '@angular/router';
+import { ArticleCardComponent } from '../articles/components/article-card/article-card.component';
+import { ArticlesModule } from '../articles/articles.module';
 
 
 
@@ -13,11 +16,13 @@ import { AuthorDetailsPageComponent } from './pages/author-details-page/author-d
     AuthorPageComponent,
     AuthorCardComponent,
     AuthorListComponent,
-    AuthorDetailsPageComponent
+    AuthorDetailsPageComponent,
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule,
+    ArticlesModule
   ]
 })
 export class AuthorsModule { }

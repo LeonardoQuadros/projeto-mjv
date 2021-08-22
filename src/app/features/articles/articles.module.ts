@@ -28,6 +28,7 @@ import { ArticleDetailsPageComponent } from './pages/article-details-page/articl
     CommonModule,
     SharedModule,
     RouterModule
-  ]
+  ],
+  exports: [ArticleCardComponent]
 })
 export class ArticlesModule { }

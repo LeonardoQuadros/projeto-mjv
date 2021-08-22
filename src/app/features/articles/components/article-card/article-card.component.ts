@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AuthorService } from 'src/app/features/authors/services/author.service';
 import { Article } from '../../models/article.model';
 
 @Component({
@@ -14,9 +15,15 @@ export class ArticleCardComponent implements OnInit {
   @Input()
   card: boolean = true;
 
-  constructor() { }
+  constructor(private authorService: AuthorService) { }
 
   ngOnInit(): void {
+    
+  }
+
+  findAuthorId(name: string)
+  {
+    return this.authorService.getAuthorIdByName(name);
   }
 
 }

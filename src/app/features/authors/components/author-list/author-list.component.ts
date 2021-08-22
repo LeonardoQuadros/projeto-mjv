@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Author } from '../../models/author.model';
 
 @Component({
   selector: 'app-author-list',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./author-list.component.scss']
 })
 export class AuthorListComponent implements OnInit {
+
+  @Input()
+  authorsList?: Array<Author>;
 
   constructor() { }
 

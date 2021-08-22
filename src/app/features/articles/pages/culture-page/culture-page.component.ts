@@ -14,7 +14,7 @@ export class CulturePageComponent implements OnInit {
   constructor(private articleService: ArticleService) { }
 
   ngOnInit(): void {
-    this.articlesList = this.articleService.getArticlesByTheme('culture')
+    this.articlesList = this.articleService.getArticlesByTheme('cultura')
   }
 
 }

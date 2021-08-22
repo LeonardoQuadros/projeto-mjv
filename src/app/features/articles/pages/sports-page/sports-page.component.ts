@@ -13,7 +13,7 @@ export class SportsPageComponent implements OnInit {
   constructor(private articleService: ArticleService) { }
 
   ngOnInit(): void {
-    this.articlesList = this.articleService.getArticlesByTheme('sports')
+    this.articlesList = this.articleService.getArticlesByTheme('esportes')
   }
 
 }

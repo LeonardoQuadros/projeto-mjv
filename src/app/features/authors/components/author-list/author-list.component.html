@@ -1,1 +1,6 @@
-<p>author-list works!</p>
+<div>
+    <app-author-card
+    *ngFor="let author of authorsList"
+    [author]="author"
+    ></app-author-card>
+</div>

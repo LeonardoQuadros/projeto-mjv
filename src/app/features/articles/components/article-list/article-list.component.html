@@ -1,1 +1,7 @@
-<p>article-list works!</p>
+<div>
+    <app-article-card
+    *ngFor="let article of articlesList"
+    [article]="article"
+    ></app-article-card>
+</div>
+
